@@ -48,6 +48,8 @@ $('#search').onchange = function (e) {
       $res.innerHTML = '';
       xhr.response.forEach(function (l) {
         var lic = $res.append('div.license');
+        if (!(new Date(l.qualificationDate.split('/').reverse().join('-')) <= new Date()))
+          lic.classList.add('unrenewed')
         for (var f in l) {
           lic.append('span.' + f + ' ' + l[f] + ' ');
         }
