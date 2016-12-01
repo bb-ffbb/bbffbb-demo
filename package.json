@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "async": "^1.4.2",
-    "bbffbb-scraper": "0.0.1",
+    "bbffbb-scraper": "0.0.2",
     "express": "^4.13.3",
     "memory-cache": "^0.1.4"
   },
